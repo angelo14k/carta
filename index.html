@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Jessica 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&family=Roboto:wght@300;400&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #1f0036, #3c1053, #ad5389);
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 50px 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.3);
+      animation: fadeIn 2s ease-out;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      color: #ffc6e0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #fff0f5;
+      white-space: pre-line;
+    }
+
+    .button {
+      background-color: #ff69b4;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      margin-top: 30px;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff85c1;
+      transform: scale(1.05);
+    }
+
+    .emoji {
+      font-size: 36px;
+      margin: 20px 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="invitacion">
+  <div class="emoji">🌸💫🌷✨</div>
+  <h1>Jessica Aracely Tapia Carcasi</h1>
+  <p>Mi amor, cuando regreses de Sandia...<br><br>
+  ¿Te gustaría tener una cita especial conmigo?<br>
+  Solo tú y yo, compartiendo un momento único. 💕</p>
+  <button class="button" onclick="mostrarMensaje()">¡Sí, amor! 🥰</button>
+</div>
+
+<div class="container hidden" id="mensaje">
+  <div class="emoji">🌠💖🌟💐</div>
+  <h1>Amor mío</h1>
+  <p>
+Aunque la distancia nos separe físicamente, no ha logrado alejar ni un solo sentimiento que tengo por ti. 
+Cada día que pasa, te pienso, te recuerdo y te amo más.
+
+La verdad es que te extraño muchísimo. Extraño tu voz, tu risa, tu mirada… todo de ti. 
+Pero también sé que cada kilómetro que hoy nos separa, solo fortalece lo que sentimos.
+
+Mi amor por ti no conoce fronteras ni barreras. Y aunque no pueda abrazarte ahora, 
+tengo la certeza de que pronto estaremos juntos.
+
+Espero con ansias ese momento, porque cuando te vea, todo habrá valido la pena.
+
+Te amo y te pienso siempre. ❤️
+  </p>
+</div>
+
+<audio autoplay loop>
+  <source src="muchachita.mp3" type="audio/mp3">
+  Tu navegador no soporta el elemento de audio.
+</audio>
+
+<script>
+  function mostrarMensaje() {
+    document.getElementById('invitacion').classList.add('hidden');
+    document.getElementById('mensaje').classList.remove('hidden');
+  }
+</script>
+
+</body>
+</html>
